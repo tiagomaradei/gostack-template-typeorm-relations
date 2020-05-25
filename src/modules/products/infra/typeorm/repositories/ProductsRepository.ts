@@ -61,7 +61,7 @@ class ProductsRepository implements IProductsRepository {
         });
 
       newProductData.quantity = newQuantity;
-      return product;
+      return newProductData;
     });
 
     await this.ormRepository.save(updatedProducts);
